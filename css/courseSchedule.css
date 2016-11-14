@@ -1,0 +1,80 @@
+.menu
+{
+    position: fixed;
+    width: 900px;
+    background-color: #20486B;
+    padding-top: 50px;
+    margin-right: 0px;
+    z-index: 10;
+    color: white;
+   visibility: hidden;
+
+
+}
+
+.menuButton:hover .menu
+{
+  display: block;
+  opacity: 1;
+  visibility: visible;
+
+}
+
+.menuButton:hover
+{
+    width: 900px;
+}
+
+.menuButton
+{
+    width: 150px;
+    position:fixed;
+    background-color: #20486B;
+    padding-top: 50px;
+    margin-right: 0px;
+    z-index: 11;
+    color: white;
+    cursor: pointer;
+}
+
+#tableLegend {
+
+width: 200px;
+margin-left: 0px;
+padding-bottom: 20px;
+
+right:0px;
+top:0px;
+}
+
+select
+{
+    color: black;
+}
+
+#th {
+    
+    width: 200;
+    
+background-color:gold;
+border: 1px solid black;
+border-collapse: collapse;
+
+float:left;
+}
+
+.reloadButton
+{
+
+    padding-left:400px;
+    padding-right: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menuBuffer
+{
+    width: 100%;
+    height: 350px;
+}
+

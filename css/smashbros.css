@@ -1,0 +1,1038 @@
+@charset "UTF-8";
+/*
+=====================================================================
+*
+*    Reset
+*
+* ===================================================================
+*/
+html 
+{
+	overflow-y:scroll;
+}
+html,body
+{
+	width: 100%;
+	height: 100%;
+	min-width: 960px;
+
+}
+
+body 
+{
+	font-family: '?????? Pro W3','Hiragino Kaku Gothic Pro','????',Meiryo,'MS P????',Osaka,sans-serif;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	font-size: 90%;
+	line-height: 1.5;
+	color: #666666;
+	background-color: azure;
+}
+
+h1
+{
+	font-size: 100%;
+	padding-top 0px;
+}
+
+html,a,form,area,div,table,dl,dt,dd,ul,ol,li,dd,h2,h3,h4,h5,h6,p{
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	font-size: 100%;
+}
+img			{ border:none; border-style:none; }
+table		{ font-size:100%; border-collapse:collapse; border-spacing:0; text-align:left; }
+th,td		{ margin: 0; padding: 0; }
+ul li			{ list-style: none; }
+
+a			{ color:#666; text-decoration: none; outline:none; border-style: none; }
+a:hover,
+a:focus		{ color:#999; text-decoration: none; outline:none; border-style: none; }
+
+/*
+=====================================================================
+*
+*    clearfix
+*
+* ===================================================================
+*/
+.clearfix:after{
+	content: " ";
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+}
+.clearfix{
+	display: inline-block;
+}
+/* Hides from IE-mac \*/
+*html .clearfix{
+	height:1%;
+}
+.clearfix{
+	display:block;
+}
+/* End hide from IE-mac */
+
+/*
+=====================================================================
+*
+*    Common
+*
+* ===================================================================
+*/
+
+
+.flL, .left { float: left; }
+.flR, .right { float: right; }
+
+/*????????*/
+.pdT5 { padding-top: 5px; }
+.pdT10 { padding-top: 10px; }
+.pdT15 { padding-top: 15px; }
+.pdT20 { padding-top: 20px; }
+.pdT120 { padding-top: 120px; }
+
+.pdB5 { padding-bottom: 5px; }
+.pdB10 { padding-bottom: 10px; }
+.pdB15 { padding-bottom: 15px; }
+.pdB20 { padding-bottom: 20px; }
+
+/*??????*/
+/*TOP*/
+.mgT2{margin-top:2px;}
+.mgT3{margin-top:3px;}
+.mgT5{margin-top:5px;}
+.mgT10{margin-top:10px;}
+.mgT20{margin-top:20px;}
+.mgT25{margin-top:25px;}
+.mgT30{margin-top:30px;}
+.mgT40{margin-top:40px;}
+
+
+/*BOTTOM*/
+.mgB2{margin-bottom:2px;}
+.mgB3{margin-bottom:3px;}
+.mgB5{margin-bottom:5px;}
+.mgB8{margin-bottom:8px;}
+.mgB10{margin-bottom:10px;}
+.mgB15{margin-bottom:15px;}
+.mgB20{margin-bottom:20px;}
+.mgB25{margin-bottom:25px;}
+.mgB30{margin-bottom:30px;}
+.mgB35{margin-bottom:35px;}
+.mgB40{margin-bottom:40px;}
+.mgB45{margin-bottom:45px;}
+.mgB50{margin-bottom:50px;}
+.mgB55{margin-bottom:55px;}
+.mgB60{margin-bottom:60px;}
+.mgB70{margin-bottom:70px;}
+.mgB75{margin-bottom:75px;}
+.mgB80{margin-bottom:80px;}
+.mgB90{margin-bottom:90px;}
+.mgB100{margin-bottom:100px;}
+
+/*RIGHT*/
+.mgR3{margin-right:3px;}
+.mgR5{margin-right:5px;}
+.mgR10{margin-right:10px;}
+.mgR15{margin-right:15px;}
+.mgR20{margin-right:20px;}
+.mgR25{margin-right:25px;}
+.mgR30{margin-right:30px;}
+.mgR35{margin-right:35px;}
+.mgR50{margin-right:50px;}
+.mgR60{margin-right:60px;}
+.mgR80{margin-right:80px;}
+
+/*LEFT*/
+.mgL3{margin-left:3px;}
+.mgL5{margin-left:5px;}
+.mgL10{margin-left:10px;}
+.mgL15{margin-left:15px;}
+.mgL20{margin-left:20px;}
+.mgL25{margin-left:25px;}
+.mgL35{margin-left:35px;}
+.mgL40{margin-left:40px;}
+.mgL50{margin-left:50px;}
+
+.pdB40 { padding-bottom: 40px; }
+
+.alL{ text-align:left; }
+.alC{ text-align:center; }
+.alR{ text-align:right; }
+
+.container {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hideText {
+	height: 0px;
+	width: 0px;
+	overflow: hidden;
+	position: absolute;
+	text-indent: -9999px;
+}
+
+.hideContent {
+	position: absolute;
+	overflow: hidden;
+	height: 0px;
+	width: 0px;
+}
+
+.rollover {
+	position: absolute;
+	display: none;
+	background: url(../images/common/bg/type2.png) repeat 0px 0px;
+}
+a:hover .rollover {
+	display: block;
+}
+body.tablet a:hover .rollover {
+	display: none;
+}
+
+.scrollImg {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	margin-top: 0;
+}
+
+/*
+=====================================================================
+*
+*    Scroll Bar
+*
+* ===================================================================
+*/
+.ps-container .ps-scrollbar-x {
+    position: absolute; /* please don't change 'position' */
+    bottom: 3px; /* there must be 'bottom' for ps-scrollbar-x */
+    height: 8px;
+    background-color: #aaa;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    opacity: 0;
+    filter: alpha(opacity = 0);
+    -webkit-transition: opacity.2s linear;
+    -moz-transition: opacity .2s linear;
+    transition: opacity .2s linear;
+}
+
+.ps-container:hover .ps-scrollbar-x {
+    opacity: 0.6;
+    filter: alpha(opacity = 60);
+}
+
+.ps-container .ps-scrollbar-x:hover {
+    opacity: 0.9;
+    filter: alpha(opacity = 90);
+    cursor:default;
+}
+
+.ps-container .ps-scrollbar-x.in-scrolling {
+    opacity: 0.9;
+    filter: alpha(opacity = 90);
+}
+
+.ps-container .ps-scrollbar-y {
+
+    position: absolute; /* please don't change 'position' */
+    right: 3px; /* there must be 'right' for ps-scrollbar-y */
+    width: 8px;
+    background-color: #aaa;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    opacity: 0;
+    filter: alpha(opacity = 0);
+    -webkit-transition: opacity.2s linear;
+    -moz-transition: opacity .2s linear;
+    transition: opacity .2s linear;
+}
+
+.ps-container:hover .ps-scrollbar-y {
+    opacity: 0.6;
+    filter: alpha(opacity = 60);
+}
+
+.ps-container .ps-scrollbar-y:hover {
+    opacity: 0.9;
+    filter: alpha(opacity = 90);
+    cursor: default;
+}
+
+.ps-container .ps-scrollbar-y.in-scrolling {
+    opacity: 0.9;
+    filter: alpha(opacity = 90);
+}
+
+/*
+=====================================================================
+*
+*    Youtube
+*
+* ===================================================================
+*/
+#Youtube {
+
+	width: 640px;
+	height: 360px;
+	background: black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
+
+	#Youtube .cover {
+		position: absolute;
+		width: 640px;
+		height: 360px;
+	}
+
+
+	#Youtube .navi {
+		position: absolute;
+		width: 640px;
+		height: 22px;
+		margin-top: 338px;
+		background: url(../images/common/bg/player-navi.png) repeat 0px 0px;
+	}
+
+		#Youtube .navi .playBtn {
+			width: 22px;
+			float: left;
+			margin-right: 1px;
+		}
+			#Youtube .navi .playBtn a {
+				display: block;
+				height: 22px;
+				background: url(../images/common/btn/player.gif) no-repeat 0px 0px;
+			}
+			#Youtube .navi .playBtn a:hover {
+				background-position: 0px -22px;
+			}
+
+			#Youtube .navi .playBtn a.pause {
+				background-position: 0px -44px;
+			}
+			#Youtube .navi .playBtn a.pause:hover {
+				background-position: 0px -66px;
+			}
+
+
+		#Youtube .navi .stopBtn {
+			width: 22px;
+			float: left;
+			margin-right: 10px;
+		}
+			#Youtube .navi .stopBtn a {
+				display: block;
+				height: 22px;
+				background: url(../images/common/btn/player.gif) no-repeat 0px -88px;
+			}
+			#Youtube .navi .stopBtn a:hover {
+				background-position: 0px -110px;
+			}
+
+		#Youtube .navi .seek {
+			width: 452px;
+			height: 22px;
+			float: left;
+			margin-right: 12px;
+		}
+			#Youtube .navi .seek .inner {
+				position: absolute;
+				width: 452px;
+				margin-top: 10px;
+			}
+				#Youtube .navi .seek .bg {
+					position: absolute;
+					width: 100%;
+					border-top: solid 1px #FFF;
+					opacity: 0.3;
+					-moz-opacity:0.3;
+					filter: alpha(opacity=30);
+					pointer-events: none;
+				}
+				#Youtube .navi .seek .bar {
+					position: absolute;
+					width: 0%;
+					border-top: solid 1px #FFF;
+					pointer-events: none;
+				}
+
+				#Youtube .navi .seek .head {
+					position: absolute;
+
+				}
+					#Youtube .navi .seek .head a {
+						display: block;
+						width: 10px;
+						height: 10px;
+						background: url(../images/common/btn/player-seek.png) no-repeat 0px 0px;
+						margin-top: -5px;
+						margin-left: -5px;
+					}
+
+
+		#Youtube .navi .time {
+			width: 65px;
+			float: left;
+			font-size: 9px;
+			line-height: 24px;
+			color: #FFF;
+			text-align: center;
+		}
+
+		#Youtube .navi .volume {
+			float: right;
+			padding-right: 14px;
+		}
+			#Youtube .navi .volume a {
+				display: block;
+				width: 32px;
+				height: 18px;
+				margin-top: 1px;
+				background: url(../images/common/btn/player-sound.png) no-repeat 0px 0px;
+			}
+
+			#Youtube .navi .volume a.volme1 {
+				background: url(../images/common/btn/player-sound.png) no-repeat 0px -18px;
+			}
+			#Youtube .navi .volume a.volme2 {
+				background: url(../images/common/btn/player-sound.png) no-repeat 0px -36px;
+			}
+			#Youtube .navi .volume a.volme3 {
+				background: url(../images/common/btn/player-sound.png) no-repeat 0px -54px;
+			}
+			#Youtube .navi .volume a.volme4 {
+				background: url(../images/common/btn/player-sound.png) no-repeat 0px -72px;
+			}
+			#Youtube .navi .volume a.volme5 {
+				background: url(../images/common/btn/player-sound.png) no-repeat 0px -90px;
+			}
+
+	#YoutubePlayer {
+		width: 640px;
+		height: 360px;
+	}
+
+
+/*
+=====================================================================
+*
+*    modalWindow
+*
+* ===================================================================
+*/
+.modalWindow {
+	display: none;
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 90;
+}
+	.modalWindow .bg {
+		display: none;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		z-index: 90;
+		background: #FFF;
+	}
+
+	.modalWindow .content {
+		display: none;
+		position: absolute;
+		z-index: 90;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		padding-bottom: 30px;
+	}
+
+/*
+=====================================================================
+*
+*    footerModal
+*
+* ===================================================================
+*/
+.footerModal {
+	display: none;
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 100;
+}
+	.footerModal .bg {
+		/* display: none; */
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		z-index: 90;
+		background: url(../images/common/bg/footer-dialog.png) repeat 0px 0px;
+	}
+
+	.footerModal .content {
+		/* display: none; */
+		position: fixed;
+		z-index: 90;
+		/*top: 50%;*/
+		left: 50%;
+		width: 450px;
+		margin-left: -225px;
+		background-color: #FFF;
+	}
+
+		.footerModal .content .title {
+			width: 400px;
+			padding-top: 30px;
+			padding-bottom: 25px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 30px;
+			text-align: center;
+			border-bottom: solid 1px #E8E8E8;
+		}
+		.footerModal .content .link {
+			width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 55px;
+		}
+			.footerModal .content .link .left {
+				width: 120px;
+				text-align: center;
+			}
+			.footerModal .content .link .right {
+				width: 270px;
+			}
+			.footerModal .content .link ul.simple {
+				width: 340px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+				.footerModal .content .link ul li {
+					margin-bottom: 10px;
+				}
+					.footerModal .content .link ul li a {
+						font-size: 12px;
+						text-decoration: underline;
+						color: #1A1A1A;
+
+					}
+					.footerModal .content .link ul li a:hover {
+						color: #999;
+
+					}
+
+						.footerModal .content .link ul li a span {
+							/* font-weight: bold; */
+						}
+
+
+		.footerModal .content .close {
+			padding-bottom: 30px;
+		}
+			.footerModal .content .close a {
+				display: block;
+				width: 35px;
+				height: 35px;
+				margin-left: auto;
+				margin-right: auto;
+				background: url(../images/common/btn/footer-dialog-close.png) no-repeat 0px 0px;
+			}
+			.footerModal .content .close a:hover {
+				background-position: 0px -35px;
+			}
+
+
+
+/*
+=====================================================================
+*
+*    Header
+*
+* ===================================================================
+*/
+#Header {
+	width: 100%;
+	margin-bottom: 25px;
+}
+	#Header .logoBlock {
+		position: absolute;
+		width: 100%;
+		padding-top: 0px;
+		padding-bottom: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		z-index: 99;
+	}
+		#Header .logoBlock .left {
+			padding-top: 8px;
+			padding-left: 10px;
+		}
+
+			#Header .logoBlock .left a {}
+
+		#Header .logoBlock .right {
+			padding-right: 10px;
+		}
+
+			#Header .logoBlock .right .ds3 {
+				float: left;
+				padding-right: 5px;
+				background: url(../images/common/bg/header-border.png) no-repeat right center;
+			}
+			#Header .logoBlock .right .wii {
+				float: left;
+				padding-left: 5px;
+			}
+			#Header .logoBlock .right .sns {
+				float: left;
+				padding-left: 20px;
+				padding-top: 10px;
+			}
+				#Header .logoBlock .right .sns ul {}
+
+					#Header .logoBlock .right .sns ul li {
+						float: left;
+						margin-right: 10px;
+					}
+					#Header .logoBlock .right .sns ul li.google {
+						margin-right: 0px;
+					}
+
+
+	#Header .mainBlock {
+		overflow: hidden;
+		padding-top: 125px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/*	#Header .mainBlock .mainImage {
+			position: relative;
+			width: 100%;
+			height: 550px;
+		}
+
+			#Header .mainBlock .mainImage .ds3LogoWrapper {
+				float: left;
+				position: relative;
+				width: 50%;
+				height: 550px;
+				background: #75010c url(../images/index/bg/main-3ds-bg.jpg) no-repeat right top;
+			}
+
+			#Header .mainBlock .mainImage .wiiuLogoWrapper {
+				float: left;
+				position: relative;
+				width: 50%;
+				height: 550px;
+				background: #fff;
+			}
+
+				#Header .mainBlock .mainImage img {
+					position: absolute;
+					z-index: 1;
+					top: 0;
+					display: block;
+				}
+
+				#Header .mainBlock .mainImage .ds3LogoWrapper img {
+					right: 0;
+				}
+
+				#Header .mainBlock .mainImage .wiiuLogoWrapper img {
+					left: 0;
+				}
+
+		#Header .mainBlock .ds3InfoWrapper,
+		#Header .mainBlock .wiiuInfoWrapper {
+			position: relative;
+			width: 50%;
+		}
+
+	#Header .mainBlock .ds3MainImage {
+		position: relative;
+		width: 100%;
+		height: 550px;
+		background: #fff url(../images/index/bg/main-3dstop-bg.jpg) no-repeat top center;
+	}
+
+		#Header .mainBlock .ds3MainImage .ds3LogoWrapper {
+			position: absolute;
+			left: 50%;
+			margin-left: -1000px;
+		}*/
+/*
+=================================
+	Gloval Nav
+=================================
+*/
+/* ========= common ========== */
+#Header .navBlock {
+	position: relative;
+	height: 54px;
+	background: #000;
+}
+
+	#Header .navWrapper {
+		width: 980px;
+		margin: 0 auto;
+	}
+
+		#Header .navWrapper ul {
+			height: 54px;
+			width: 100%;
+		}
+
+		#Header .navWrapper ul.bgBorderRight {
+			background: url( ../images/common/bg/menu-border.gif );
+			background-repeat: no-repeat;
+			background-position: center right;
+		}
+
+			#Header .navWrapper ul li {
+				float: left;
+				height: 34px;
+				padding: 0 12px;
+				margin: 10px 0;
+				background: url( ../images/common/bg/menu-border.gif );
+				background-repeat: no-repeat;
+				background-position: center left;
+			}
+
+			#Header .navWrapper ul li.menu3ds {
+				height: 34px;
+				margin: 0;
+				padding: 10px 10px;
+				background: #9a1424;
+			}
+
+			#Header .navWrapper ul li.menuWiiu {
+				height: 34px;
+				margin: 0;
+				padding: 10px 10px;
+				background: #178abb;
+			}
+
+				#Header .navWrapper li a {
+					display: block;
+					overflow: hidden;
+					height: 34px;
+				}
+
+					#Header .navWrapper li a:hover .scrollImg,
+					#Header .navWrapper li a.currentPage .scrollImg {
+						margin-top: -34px;
+					}
+
+					#Header .navWrapper .menu3dsBlock,
+					#Header .navWrapper .menuWiiuBlock {
+						display: none;
+						position: absolute;
+						top: 54px;
+						left: 0;
+						width: 100%;
+						height: 70px;
+					}
+					#Header .navWrapper .menu3dsBlock {
+						background: #9a1424;
+					}
+					#Header .navWrapper .menuWiiuBlock {
+						background: #9a1424;
+					}
+
+						#Header .navWrapper .menu3dsBlock ul,
+						#Header .navWrapper .menuWiiuBlock ul {
+							height: 70px;
+							width: 960px;
+							margin: 0 auto;
+						}
+
+							#Header .navWrapper .menu3dsBlock ul li,
+							#Header .navWrapper .menuWiiuBlock ul li {
+								height: 45px;
+								padding: 4px 12px;
+							}
+
+								#Header .navWrapper .menu3dsBlock ul li a,
+								#Header .navWrapper .menuWiiuBlock ul li a {
+									height: 45px;
+								}
+
+										#Header .menu3ds .menu3dsBlock ul li a:hover .scrollImg,
+										#Header .menu3ds .menuWiiuBlock ul li a:hover .scrollImg,
+										#Header .menu3ds .menu3dsBlock ul li a.currentPage .scrollImg,
+										#Header .menu3ds .menuWiiuBlock ul li a.currentPage .scrollImg {
+											margin-top: -46px;
+										}
+
+
+/* ========= 3ds ========== */
+.ds3 #Header .navBlock {
+	height: 124px;
+}
+
+	.ds3 #Header .navWrapper {
+		height: 124px;
+	}
+
+		.ds3 #Header .navWrapper .menu3ds > a:hover > .scrollImg {
+			margin-top: 0;
+		}
+
+			.ds3 #Header .navWrapper .menu3dsBlock {
+				display: block;
+			}
+
+				.ds3 #Header .navWrapper .menu3dsBlock ul.bgBorderRight,
+				.ds3 #Header .navWrapper .menu3dsBlock li {
+					background: url( ../images/common/bg/menu-border-3ds.gif ) no-repeat;
+				}
+
+				.ds3 #Header .navWrapper .menu3dsBlock ul.bgBorderRight {
+					background-position: center right;
+				}
+
+				.ds3 #Header .navWrapper .menu3dsBlock li {
+					background-position: center left;
+				}
+
+
+/*
+=====================================================================
+*
+*    Footer
+*
+* ===================================================================
+*/
+#Footer {
+	padding-top: 20px;
+	padding-bottom: 40px;
+	background-color: #FFF;
+}
+
+	#Footer .container {
+		width: 880px;
+	}
+
+		#Footer .captionBlock {
+			margin-bottom: 20px;
+			color: #999;
+			text-align: center;
+			font-size: 12px;
+			font-weight: bold;
+		}
+
+		#Footer .cautionBlock {
+			margin-bottom: 20px;
+			color: #999;
+			font-size: 12px;
+			text-align: center;
+		}
+
+		#Footer .copyBlock {
+			font-size: 10px;
+			color: #999;
+			text-align: center;
+			margin-bottom: 50px;
+		}
+
+		#Footer .pageBtnBlock {
+		}
+			#Footer .pageBtnBlock a {
+				display: block;
+				width: 37px;
+				height: 30px;
+				background: url(../images/common/btn/page-top-footer.gif) no-repeat 0px 0px;
+			}
+			#Footer .pageBtnBlock a:hover {
+				background-position: 0px -30px;
+			}
+
+		#Footer .btnBlock {
+			padding-top: 12px;
+			border-top: solid 1px #F5F5F5;
+		}
+			#Footer .btnBlock .left {
+			}
+
+				#Footer .btnBlock .left .flL {
+					width: 34px;
+					margin-right: 12px;
+				}
+					#Footer .btnBlock .left .flL a {
+						display: block;
+						height: 34px;
+						background: url(../images/common/btn/facebook.png) no-repeat 0px 0px;
+					}
+				#Footer .btnBlock .left .flR {
+					width: 34px;
+				}
+					#Footer .btnBlock .left .flR a {
+						display: block;
+						height: 34px;
+						background: url(../images/common/btn/twitter.png) no-repeat 0px 0px;
+					}
+
+			#Footer .btnBlock .right {
+				font-size: 12px;
+			}
+
+					#Footer .btnBlock .right a {
+						display: block;
+						line-height: 20px;
+						padding-right: 16px;
+						background: url(../images/common/bg/footer-arrow.png) no-repeat right 1px;
+					}
+
+					#Footer .btnBlock .right a:hover {
+						background-position: right -14px;
+					}
+
+/*
+=====================================================================
+*
+*    SecretSection
+*
+* ===================================================================
+*/
+#SecretSection {
+	margin-bottom: 70px;
+}
+
+	#SecretSection .title {
+		margin-bottom: 18px;
+		text-align: center;
+	}
+
+	#SecretSection .dlc-title {
+		line-height: 1.2;
+		margin-bottom: 18px;
+		color: #333333;
+		font-size: 42px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	#SecretSection .dlc-title span {
+		display: block;
+		font-size: 14px;
+	}
+
+	#SecretSection .container {
+		overflow: hidden;
+		width: 980px;
+	}
+
+	#SecretSection .characters {
+		width: 980px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+		#SecretSection .characters .cell {
+			height: 245px;
+			float: left;
+			margin-right: 15px;
+		}
+
+		#SecretSection .characters .type1 {
+			width: 230px;
+		}
+
+			#SecretSection .characters .cell .update {
+				position: absolute;
+				display: block;
+				margin-left: -5px;
+				margin-top: 15px;
+				z-index: 1;
+			}
+			#SecretSection .characters .cell a {
+				display: block;
+				-webkit-user-select: none;
+			}
+			#SecretSection .characters .cell:hover {
+			}
+				#SecretSection .characters .cell a .over {
+					display: none;
+					position: absolute;
+					margin-top: 15px;
+				}
+				#SecretSection .characters .cell:hover .over {
+					display: block;
+				}
+				body.tablet #SecretSection .characters .cell:hover .over {
+					display: none;
+				}
+
+/* SecretModal */
+#SecretAlertSection.footerModal .content{
+	width: 460px;
+	padding: 20px 50px;
+	margin-left: -230px;
+}
+
+	#SecretAlertSection .bg{
+		background: #333333;
+	}
+
+	#SecretAlertSection .alertIcon{
+		width: 42px;
+		margin: 0 auto 15px auto;
+	}
+
+	#SecretAlertSection .alertText{
+		width: 470px;
+		margin: 0 auto 20px auto;
+	}
+
+		#SecretAlertSection .alertText p{
+			font-weight: bold;
+			text-align: center;
+		}
+
+	#SecretAlertSection .alertBtn{
+		width: 430px;
+		margin: 0 auto 30px auto;
+	}
+
+		#SecretAlertSection .alertBtn .yesBtn{
+			width: 200px;
+			float: left;
+			margin-right: 25px;
+		}
+
+		#SecretAlertSection .alertBtn .noBtn{
+			width: 200px;
+			float: right;
+		}
+
+	#SecretAlertSection .alertCheck {
+		font-size: 12px;
+		text-align: center;
+	}
+
+
